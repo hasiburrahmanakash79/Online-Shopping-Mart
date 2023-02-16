@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Mart</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script> 
+</head>
+<body>
+    <header>
+        <div class="navbar bg-base-100 shadow-lg">
+            <div class="flex-none">
+              <button class="btn btn-square btn-ghost">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+              </button>
+            </div>
+            <div class="flex-1">
+              <a class="btn btn-ghost normal-case text-xl">Shopping Mart</a>
+            </div>
+            <div class="flex-none">
+              <button class="btn btn-square btn-ghost">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
+              </button>
+            </div>
+          </div>
+    </header>
+    <main>
+        <div class="flex flex-col md:flex-row md:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:w-[70%]  p-6">
+                <div class="card bg-white mt-2 w-full shadow-xl">
+                    <figure><img src="images/shoes.jpeg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 id="first-product-name" class="card-title">NIKE Shoes</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <h4 class="text-lg font-medium">Price: $<span id="first-product-price">99</span></h4>
+                      <h4 class="text-lg font-medium">Quantity: <input type="number" id="first-product-quantity" class="input input-bordered w-[30%] max-w-xs" value="1" /></h4>
+                      <div class="card-actions justify-end">
+                        <button id="first-btn" class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                </div> 
+                <div class="card bg-white mt-2 w-full shadow-xl">
+                    <figure><img src="images/cycle.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Cycle</h2>
+                      <p>Warrior 2.0 26 Inch 6061 Aluminum Body Bicycle a product Of Veloce</p>
+                      <h4 class="text-lg font-medium">Price: $<span>299</span></h4>
+                      <h4 class="text-lg font-medium">Quantity: <span>1</span></h4>
+                      <div class="card-actions justify-end">
+                        <button id="second-btn" class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                </div>  
+                <div class="card bg-white mt-2 w-full shadow-xl">
+                    <figure><img src="images/bike.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Gixxer SF 250</h2>
+                      <p>Gixxer SF 250 is available in 3 different colors in Indonesia.</p>
+                      <h4 class="text-lg font-medium">Price: $<span>3650</span></h4>
+                      <h4 class="text-lg font-medium">Quantity: <span>1</span></h4>
+                      <div class="card-actions justify-end">
+                        <button id="btn-three" class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                </div>  
+                <div class="card bg-white mt-2 w-full shadow-xl">
+                    <figure><img src="images/bed.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 id="product-four-name" class="card-title">King Bed</h2>
+                      <p>Andormahal (MDF) khat/bed king size with floral headstand</p>
+                      <h4 class="text-lg font-medium">Price: $<span id="product-four-Price">890</span></h4>
+                      <h4 class="text-lg font-medium">Quantity: <input type="number" id="product-four-quantity" class="input input-bordered w-[30%] max-w-xs" value="1" /></h4>
+                      <div class="card-actions justify-end">
+                        <button id="btn-four" class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                </div> 
+                <div class="card bg-white mt-2 w-full shadow-xl">
+                    <figure><img src="images/pc.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 id="card-five-name" class="card-title">Computer</h2>
+                      <p>A computer is a machine that can be programmed</p>
+                      <h4 class="text-lg font-medium">Price: $<span id="card-five-price">1190</span></h4>
+                      <h4 class="text-lg font-medium">Quantity: <input type="number" id="card-five-quantity" class="input input-bordered w-[30%] max-w-xs" value="1" /></h4>
+                      
+                      <div class="card-actions justify-end">
+                        <button id="btn-five" class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                </div> 
+                <div class="card bg-white mt-2 w-full shadow-xl">
+                    <figure><img src="images/watch.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 id="card-six-name" class="card-title">Watch</h2>
+                      <p>Bradley Mesh Silver 40mm</p>
+                      <h4 class="text-lg font-medium">Price: $<span id="card-six-price">299</span></h4>
+                      <h4 class="text-lg font-medium">Quantity: <input type="number" id="card-six-quantity" class="input input-bordered w-[30%] max-w-xs" value="1" /></h4>
+                      <div class="card-actions justify-end">
+                        <button id="btn-six" class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="mt-8 md:w-[30%]">
+              <h1 class="text-3xl text-center font-bold bg-yellow-500 p-5 rounded-lg">Total Products <span></span></h1>
+              <div class="overflow-x-auto p-3">
+                <table class="table w-full">
+                  <!-- head -->
+                  <thead>
+                    <tr>
+                      <th>No.</th>
+                      <th>Name</th>
+                      <th>Price</th>
+                      <th>Quantity</th>
+                      <th>Total</th>
+                    </tr>
+                  </thead>
+                  <tbody id="table-container">
+                    
+                  </tbody>
+                </table>
+              </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/total.js"></script>
+</body>
+</html>
